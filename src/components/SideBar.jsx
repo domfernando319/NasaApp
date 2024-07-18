@@ -1,9 +1,10 @@
 import React from 'react'
 
-function SideBar() {
-  return (
+function SideBar(props) {
+    const {handleToggleModal} = props;
+    return (
     <div className='sidebar'>
-        <div className='bg-overlay'>
+        <div className='bg-overlay' onClick={handleToggleModal}>
 
         </div>
         <div className='sidebar-content'>
@@ -14,14 +15,14 @@ function SideBar() {
                 <p>Description</p>
                 <p>asdfasasdjasdasdlfasdjgasdj</p>
             </div>
-            <button>
+            <button onClick={handleToggleModal}>
                 <i className="fa-solid fa-arrow-right"></i>
             </button>
 
 
         </div>
     </div>
-  )
+    )
 }
 
 export default SideBar
