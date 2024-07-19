@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Main() {
+function Main(props) {
+  const {data} = props
+
   return (
     <div className='img-container'>
-      <img src="brucecar.png" alt="Bruce Wayne's car" className='bg-image'/>
+      <img src={data.hdurl} alt={data?.title || 'bg-img'} className='bg-image'/>
+
     </div>
   )
 }

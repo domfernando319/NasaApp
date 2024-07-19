@@ -1,7 +1,7 @@
 import React from 'react'
 
 function SideBar(props) {
-    const {handleToggleModal} = props;
+    const {handleToggleModal, data} = props;
     return (
     <div className='sidebar'>
         <div className='bg-overlay' onClick={handleToggleModal}>
@@ -9,11 +9,11 @@ function SideBar(props) {
         </div>
         <div className='sidebar-content'>
             <h2>
-                Bruce Wayne's Car
+                {data?.title}
             </h2>
-            <div>
-                <p>Description</p>
-                <p>asdfasasdjasdasdlfasdjgasdj</p>
+            <div className='description-container'>
+                <p className='description-title'>{data?.date}</p>
+                <p>{data?.explanation}</p>
             </div>
             <button onClick={handleToggleModal}>
                 <i className="fa-solid fa-arrow-right"></i>

@@ -50,19 +50,21 @@ footer {
 footer div {
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 }
 
 footer h2 {
-  font-size: 1.4rem;
-
+  font-size: 2rem;
+  gap: 1rem;
 }
 
 footer h1 {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
 footer button {
+  
   background: transparent;
   border: none;
   outline: none;
@@ -111,7 +113,6 @@ footer button:hover {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  overflow-y: scroll;
   height: 100%;
   width: 90%;
   max-width: 800px;
@@ -129,6 +130,49 @@ footer button:hover {
   border: none;
   outline: none;
   margin-right: auto;
+  cursor: pointer;
+  transition-duration: 200ms;
+  padding: 1rem 0;
+}
+
+.sidebar-content button:hover {
+  opacity: 0.7;
+}
+
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:1;
+}
+
+.loadingState i {
+  opacity: 0.3;
+  font-size: 3rem;
+  animation: spin 1s linear infinite;
+  padding-bottom: 1.5rem;
+}
+
+.description-title {
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding-top: 1rem;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 640px) {
