@@ -16,4 +16,4 @@ The artifacts generated are truly incredible and informative!
 - **Local Cache Implementation:** Small hiccup implementing a local cache function for the fetched API results. Try-catch blocks and console logs quickly led to a solution. 
 
 ## Live Project
-🔗[Live Demo of NasaApp](https://apod-xi.vercel.app/)
+🔗[Demo](https://apod-xi.vercel.app/)
