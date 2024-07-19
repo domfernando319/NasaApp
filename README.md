@@ -1,7 +1,10 @@
 # NasaApp
 
 ## About
-🌎 NasaApp is a ReactJS application that leverages NASA API and served as a quick hands-on experience with 3rd party API integration. Inspired by developer smoljames, NasaApp explores themes of space 🌌 and education📖. The artifacts generated are truly incredible and informative!
+🌎 NasaApp is a ReactJS application that leverages NASA API and served as a quick hands-on experience with 3rd party API integration. 
+Inspired by developer smoljames, NasaApp explores themes of space 🌌 and education📖.
+
+The artifacts generated are truly incredible and informative!
 
 ## Technologies
 - ⚛️**ReactJS:** using VITE bundler
